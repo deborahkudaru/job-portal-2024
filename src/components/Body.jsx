@@ -20,7 +20,7 @@ const Body = () => {
         <div className="lg:px-48 px-10">
           <div className="flex lg:flex-row flex-col">
             <div>
-              <h1 className="lg:text-5xl text-3xl font-extrabold leading-tight pb-4">
+              <h1 className="lg:text-5xl text-3xl font-extrabold leading- pb-4">
                 <span className="text-gray-200 bg-violet-400 lg:px-1 px-2 py-1 rounded-lg">
                   WE HELP
                 </span>{" "}
@@ -37,13 +37,13 @@ const Body = () => {
           <BsStars className="relative lg:bottom-44 lg:left-1/2 lg:text-8xl lg:flex hidden" />
           <>
             <div className="flex gap-3 lg:relative lg:bottom-28 mt-3">
-              <Link className="text-sky-100 bg-violet-400 lg:px-20 px-10 py-3  font-semibold text-sm rounded-md">
+              <Link className="text-sky-100 bg-violet-400 lg:px-20 px-5 lg:py-3 py-1 font-semibold text-sm rounded-md">
                 Search Job{" "}
               </Link>
-              <Link className="text-slate-600 border-slate-600 font-semibold border-2 lg:px-12 px-6 py-3 text-sm rounded-md">
+              <Link className="text-slate-600 border-slate-600 font-semibold border-2 lg:px-12 px-3.5 lg:py-3 py-1 text-sm rounded-md">
                 How to apply
               </Link>
-              <FaPlayCircle className="text-slate-900 relative lg:right-44 top-4 right-36 lg:text-lg text-base" />
+              <FaPlayCircle className="text-slate-900 relative lg:right-44 lg:top-4 top-3 right-32 lg:ml-0 ml-0.5 b lg:text-lg text-xs" />
             </div>
           </>
         </div>

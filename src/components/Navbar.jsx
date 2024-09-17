@@ -80,34 +80,50 @@ const Navbar = () => {
         <ul className="flex flex-col items-center gap-7 basis-full md:pr-20 font-medium">
           <li>
             <Link
-              to="/about"
-              className="text-slate-400  hover:text-violet-400 transition duration-300"
+              to="/"
+              className="text-slate-500  hover:text-slate-950 transition duration-300"
             >
-              About
+              Home
             </Link>
           </li>
           <li>
             <Link
-              to="/experience"
-              className="text-slate-400 hover:text-violet-400 transition duration-300"
+              to="/"
+              className="text-slate-500 hover:text-slate-950 transition duration-300"
             >
-              Experience
+              Category
             </Link>
           </li>
           <li>
             <Link
-              to="/project"
-              className="text-slate-400 hover:text-violet-400 transition duration-300"
+              to="/apply"
+              className="text-slate-500 hover:text-slate-950 transition duration-300"
             >
-              Project
+              Apply
             </Link>
           </li>
           <li>
             <Link
-              to="/contact"
-              className="text-slate-400 hover:text-violet-400 transition duration-300"
+              to="/post-job"
+              className="text-slate-500 hover:text-slate-950 transition duration-300"
             >
-              Contact
+              Post Job
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/login"
+              className="text-slate-900 transition duration-300 ml-10 border-slate-900 rounded-lg border-2 px-8 py-2"
+            >
+              Login
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/signup"
+              className="text-sky-100 transition duration-300 bg-violet-400 rounded-lg border-2 px-8 py-3"
+            >
+              SignUp
             </Link>
           </li>
         </ul>
