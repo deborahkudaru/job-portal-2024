@@ -9,7 +9,7 @@ import Begin from "./Begin";
 import Prefooter from "./Prefooter";
 import Header from "./Header";
 import { BsStars } from "react-icons/bs";
-import { FaPlayCircle } from "react-icons/fa";
+// import { FaPlayCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Body = () => {
@@ -43,7 +43,7 @@ const Body = () => {
               <Link className="text-slate-600 border-slate-600 font-semibold border-2 lg:px-12 px-3.5 lg:py-3 py-1 text-sm rounded-md">
                 How to apply
               </Link>
-              <FaPlayCircle className="text-slate-900 relative lg:right-44 lg:top-4 top-3 right-32 lg:ml-0 ml-0.5 b lg:text-lg text-xs" />
+              {/* <FaPlayCircle className="text-slate-900 relative lg:right-44 lg:top-4 top-3 right-32 lg:ml-0 ml-0.5 b lg:text-lg text-xs" /> */}
             </div>
           </>
         </div>
