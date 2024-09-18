@@ -20,7 +20,7 @@ const Body = () => {
         <div className="lg:px-48 px-10">
           <div className="flex lg:flex-row flex-col">
             <div>
-              <h1 className="lg:text-5xl text-3xl font-extrabold leading- pb-4">
+              <h1 className="lg:text-5xl text-3xl font-extrabold lg:leading-tight pb-4">
                 <span className="text-gray-200 bg-violet-400 lg:px-1 px-2 py-1 rounded-lg">
                   WE HELP
                 </span>{" "}
@@ -47,7 +47,7 @@ const Body = () => {
             </div>
           </>
         </div>
-        {/* <Brands /> */}
+        <Brands />
       </div>
       <Howto />
       <Category />
