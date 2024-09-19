@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Begin = () => {
   return (
-    <div className="lg:px-48 px-10 lg:pt-40 pt-20 bg-gray-50 pb-20">
+    <div className="lg:px-20 px-10 lg:pt-40 pt-20 bg-gray-50 pb-20">
       <div className="flex lg:flex-row flex-col-reverse gap-10">
         <img src={picture} alt="normal-stuff" className="lg:w-1/2" />
         <div>

@@ -6,7 +6,7 @@ const LoggedLogo = () => {
     <div>
       <Link
         to="/logged-home"
-        className="text-slate-950 text-4xl md:text-2xl  font-bold  font-DancingScript"
+        className="text-slate-950 lg:text-4xl md:text-2xl text-xl font-bold  font-DancingScript"
       >
         Work<span className="text-violet-400">buddy</span>
       </Link>

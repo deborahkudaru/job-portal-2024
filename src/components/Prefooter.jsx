@@ -4,7 +4,7 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 
 const Prefooter = () => {
   return (
-    <div className="lg:px-32 px-10 pb-10 bg-sky-100 text-slate-500 font-semibold lg:pt-20 pt-10">
+    <div className="lg:px-16 px-10 pb-10 bg-sky-100 text-slate-500 font-semibold lg:pt-20 pt-10">
       <div className="flex lg:flex-row lg:justify-between flex-col">
         <div>
           <Logo />

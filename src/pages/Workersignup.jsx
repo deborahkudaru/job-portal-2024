@@ -45,7 +45,7 @@ const Workersignup = () => {
     <div className="lg:px-48 px-10 pt-10 bg-gray-50">
       <Logo />
       <div className="flex flex-row gap-2 justify-end relative lg:bottom-0 bottom-6 lg:text-base text-sm">
-        <p>Looking to hire?</p>
+        <p className=" lg:flex hidden">Looking to hire?</p>
         <Link
           to="/employer-signup"
           className="text-violet-400 hover:text-violet-300"
@@ -54,26 +54,26 @@ const Workersignup = () => {
         </Link>
       </div>
       <div className=" mt-5 lg:w-1/2 m-auto">
-        <h2 className="lg:text-4xl text-2xl font-semibold mb-10  text-center">
+        <h2 className="lg:text-4xl text-2xl font-semibold mb-10 text-center">
           Sign up for Work
         </h2>
-        <form action="" onSubmit={handleRegister} className="lg:text-base text-sm">
-          <div className="flex gap-3 lg:text-base text-sm">
-            <button className="border border-slate-500 font-semibold lg:w-2/3 w-full m-auto pb-3 rounded-lg">
-              <img
-                src={google}
-                alt="google-logo"
-                className="w-4 relative lg:left-4 left-3 top-5"
-              />
+        <form
+          action=""
+          onSubmit={handleRegister}
+          className="lg:text-base text-sm"
+        >
+          <div className="flex gap-3 lg:text-base text-xs">
+            <button className="border border-slate-500 font-semibold lg:w-2/3 w-full m-auto py-3 rounded-lg flex lg:gap-2 gap-x-0.5 pl-3">
+              <img src={google} alt="google-logo" className="w-4" />
               Continue with Google
             </button>
-            <button className="border border-slate-500 lg:w-2/3 w-full m-auto font-semibold pb-3 rounded-lg ">
-              <FaApple className="relative lg:top-5 left-4 top-4" />
+            <button className="border border-slate-500 lg:w-2/3 w-full m-auto font-semibold py-3 rounded-lg flex lg:gap-2 gap-x-0.5 pl-3">
+              <FaApple className="" />
               Continue with Apple
             </button>
           </div>
           <p className="py-6 text-center">or</p>
-          <div className="flex gap-4 pb-6">
+          <div className="flex gap-4 lg:flex-row flex-col pb-6">
             <div className="flex flex-col">
               <label htmlFor="">First Name</label>
               <input
@@ -81,7 +81,7 @@ const Workersignup = () => {
                 value={Fname}
                 onChange={(e) => setFname(e.target.value)}
                 required
-                className="border border-slate-400 rounded-xl py-2 lg:px-6 px-1 outline-0 bg-gray-50"
+                className="border border-slate-400 rounded-xl py-2 px-6 outline-0 bg-gray-50"
               />
             </div>
             <div className="flex flex-col">
@@ -91,7 +91,7 @@ const Workersignup = () => {
                 value={Lname}
                 onChange={(e) => setLname(e.target.value)}
                 required
-                className="border border-slate-400 rounded-xl lg:px-6 px-1 py-2 outline-0 bg-gray-50"
+                className="border border-slate-400 rounded-xl px-6 py-2 outline-0 bg-gray-50"
               />
             </div>
           </div>
@@ -160,13 +160,14 @@ const Workersignup = () => {
               ></textarea>
             </div>
           </div>
-
-          <button
-            className="block text-center bg-violet-400 text-gray-50 px-4 py-2 rounded-xl font-semibold relative left-40 mb-10"
-            type="submit"
-          >
-            Create my account
-          </button>
+          <div className="w-1/2 m-auto">
+            <button
+              className="text-center bg-violet-400 text-gray-50 px-4 py-2 rounded-xl font-semibold mb-10"
+              type="submit"
+            >
+              Create my account
+            </button>
+          </div>
           <p className="text-center mb-6">
             Already have an account?{" "}
             <Link

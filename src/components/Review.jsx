@@ -17,15 +17,15 @@ const Review = () => {
         breakpoints={{
           400: {
             slidesPerView: 1,
-            spaceBetween: 15,
+            spaceBetween: 20,
           },
           700: {
             slidesPerView: 2,
-            spaceBetween: 15,
+            spaceBetween: 20,
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 15,
+            spaceBetween: 20,
           },
         }}
         freeMode={true}

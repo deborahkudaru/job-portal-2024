@@ -52,7 +52,7 @@ const FindTalent = () => {
   }, []);
 
   return (
-    <div className="bg-gray-50 px-48 pt-5">
+    <div className="bg-gray-50 lg:px-32 pt-10">
       <h2 className="text-4xl font-bold mt-28 text-center pb-10">
         Find Talent
       </h2>

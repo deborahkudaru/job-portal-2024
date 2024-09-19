@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RiMenu3Fill } from "react-icons/ri";
 import { X } from "lucide-react";
+import UserIcon from "./UserIcon";
 
 const LoggedNav = () => {
   return (
@@ -38,6 +39,9 @@ const LoggedNav = () => {
           Post a Job
         </Link>
       </li>
+      <li>
+        <UserIcon />
+      </li>
     </ul>
   );
 };
@@ -54,7 +58,7 @@ const Nav = () => {
         <div className="w-full justify-between hidden  md:flex">
           <LoggedNav />
         </div>
-        <div className="md:hidden text-rose-500">
+        <div className="md:hidden text-violet-400">
           <button onClick={toggleNav} className="object-right">
             {isOpen ? <X /> : <RiMenu3Fill className="text-4xl" />}
           </button>
@@ -64,35 +68,38 @@ const Nav = () => {
         <ul className="flex flex-col items-center gap-7 basis-full md:pr-20 font-medium">
           <li>
             <Link
-              to="/about"
-              className="text-slate-400  hover:text-rose-500 transition duration-300"
+              to="/"
+              className="text-slate-500  hover:text-slate-950 transition duration-300"
             >
-              About
+              Home
             </Link>
           </li>
           <li>
             <Link
-              to="/experience"
-              className="text-slate-400 hover:text-rose-500 transition duration-300"
+              to="/category"
+              className="text-slate-500 hover:text-slate-950 transition duration-300"
             >
-              Experience
+              Category
             </Link>
           </li>
           <li>
             <Link
-              to="/project"
-              className="text-slate-400 hover:text-rose-500 transition duration-300"
+              to="/apply"
+              className="text-slate-500 hover:text-slate-950 transition duration-300"
             >
-              Project
+              Apply
             </Link>
           </li>
           <li>
             <Link
-              to="/contact"
-              className="text-slate-400 hover:text-rose-500 transition duration-300"
+              to="/post-job"
+              className="text-slate-500 hover:text-slate-950 transition duration-300"
             >
-              Contact
+              Post a Job
             </Link>
+          </li>
+          <li>
+            <UserIcon />
           </li>
         </ul>
       )}

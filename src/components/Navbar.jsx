@@ -5,7 +5,7 @@ import { X } from "lucide-react";
 
 const NavLinks = () => {
   return (
-    <ul className="flex space-x-12 nav  font-medium ">
+    <ul className="flex gap-8 font-medium mt-5">
       <li>
         <Link
           to="/"
@@ -41,7 +41,7 @@ const NavLinks = () => {
       <li>
         <Link
           to="/login"
-          className="text-slate-900 transition duration-300 ml-10 border-slate-900 rounded-lg border-2 px-8 py-2"
+          className="text-slate-900 transition duration-300 border-slate-900 rounded-lg border-2 px-5 py-2"
         >
           Login
         </Link>
@@ -49,7 +49,7 @@ const NavLinks = () => {
       <li>
         <Link
           to="/signup"
-          className="text-sky-100 transition duration-300 bg-violet-400 rounded-lg border-2 px-8 py-3"
+          className="text-sky-100 transition duration-300 bg-violet-400 rounded-lg border-2 px-5 py-3"
         >
           SignUp
         </Link>
@@ -67,7 +67,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="w-full justify-between hidden  md:flex">
+        <div className=" hidden  md:flex">
           <NavLinks />
         </div>
         <div className="md:hidden text-violet-400">

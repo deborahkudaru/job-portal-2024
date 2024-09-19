@@ -20,7 +20,7 @@ const Apply = () => {
         location,
         price,
         createdAt: Timestamp.now(),
-      }); 
+      });
 
       setFullName("");
       setContact("");
@@ -28,7 +28,7 @@ const Apply = () => {
       setLocation("");
       setPrice("");
       alert("Job posted successfully!");
-      window.location.href="/worker-home"
+      window.location.href = "/worker-home";
     } catch (error) {
       console.error("Error posting job: ", error);
     }
@@ -37,13 +37,13 @@ const Apply = () => {
   return (
     <div className="bg-gray-50">
       <WorkerHead />
-      <div className="px-48">
-        <div className="mt-16 border border-slate-500 w-1/2 m-auto py-14 rounded-xl px-10 mb-10">
-          <h2 className="text-4xl font-semibold mb-10  text-center">
+      <div className="lg:px-48 px-10">
+        <div className="mt-16 border border-slate-500 lg:w-1/2 m-auto py-14 rounded-xl px-10 mb-10">
+          <h2 className="lg:text-2xl text-xl font-semibold mb-10  text-center">
             Apply for Job
           </h2>
 
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className="text-sm lg:text-base">
             <div className="flex flex-col">
               <label>Full Name</label>
               <input
@@ -94,12 +94,14 @@ const Apply = () => {
                 className="border border-slate-200 rounded-xl px-6 py-2 outline-0"
               />
             </div>
-            <button
-              className="block text-center bg-violet-400 text-gray-50 px-4 py-2 rounded-xl font-semibold relative left-40 mt-10"
-              type="submit"
-            >
-              Apply
-            </button>
+            <div className="w-1/4 m-auto">
+              <button
+                className="bg-violet-400 text-gray-50 px-4 py-2 rounded-xl font-semibold mt-10"
+                type="submit"
+              >
+                Apply
+              </button>
+            </div>
           </form>
         </div>
       </div>

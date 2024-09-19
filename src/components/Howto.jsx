@@ -3,7 +3,7 @@ import form from "../images/form.png";
 
 const Howto = () => {
   return (
-    <div className="lg:px-48 px-10 pt-20 bg-gray-50">
+    <div className="lg:px-20 px-10 pt-20 bg-gray-50">
       <div className="flex lg:flex-row flex-col gap-10  -z-50">
         <div className="lg:w-2/3">
           <h2 className="lg:text-4xl text-2xl font-bold lg:w-3/4">

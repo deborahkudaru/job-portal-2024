@@ -29,8 +29,8 @@ const Login = () => {
         <h2 className="lg:text-2xl text-lg font-semibold">Login To Workbuddy</h2>
 
         <form action="" onSubmit={handleLogin}>
-          <div className="border-2 border-slate-200 bg-gray-50 px-1 rounded-lg lg:pb-3 pb-1 mt-5 w-2/3 m-auto">
-            <FaRegUser className="relative lg:left-7 left-3 top-5" />
+          <div className="border-2 border-slate-200 bg-gray-50 px-2 rounded-lg lg:py-3 py-1 mt-5 w-2/3 m-auto flex gap-2">
+            <FaRegUser className="mt-0.5 text-slate-400" />
             <input
               type="email"
               value={email}
@@ -40,8 +40,8 @@ const Login = () => {
               className="bg-gray-50 outline-0 border-0"
             />
           </div>
-          <div className="border-2 border-slate-200 bg-gray-50 px-1 rounded-lg pb-3 mt-5 w-2/3 m-auto">
-            <FiLock className="relative lg:left-7 left-3 top-5" />
+          <div className="border-2 border-slate-200 bg-gray-50 px-2 rounded-lg lg:py-3 py-1 mt-5 w-2/3 m-auto flex gap-2">
+            <FiLock className="mt-0.5 text-slate-400" />
             <input
               type="password"
               value={password}
@@ -60,16 +60,16 @@ const Login = () => {
           </button>
           <p>or</p>
           <div className="flex flex-col gap-3 mt-5">
-            <button className="border border-slate-500 font-semibold w-2/3 m-auto pb-3 rounded-lg">
+            <button className="border border-slate-500 font-semibold w-2/3 m-auto py-3 rounded-lg flex gap-2 lg:px-14 px-7">
               <img
                 src={google}
                 alt="google-logo"
-                className="w-4 relative lg:left-14 left-7 top-5"
+                className="w-4 mt-0.5"
               />
               Continue with Google
             </button>
-            <button className="border border-slate-500 w-2/3 m-auto font-semibold pb-3 rounded-lg mt-2">
-              <FaApple className="relative top-5 lg:left-14 left-7" />
+            <button className="border border-slate-500 w-2/3 m-auto font-semibold py-3 rounded-lg mt-2 flex gap-2 lg:px-14 px-7">
+              <FaApple className="mt-0.5" />
               Continue with Apple
             </button>
           </div>

@@ -10,17 +10,17 @@ const PostJob = () => {
   const [company, setCompany] = useState("");
   const [location, setLocation] = useState("");
   const [price, setPrice] = useState("");
-  
-  const { currentUser } = auth; 
-  
+
+  const { currentUser } = auth;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     if (!currentUser) {
       alert("You need to be logged in to post a job");
       return;
     }
-  
+
     try {
       await addDoc(collection(db, "jobs"), {
         title,
@@ -31,10 +31,10 @@ const PostJob = () => {
         createdAt: Timestamp.now(),
         postedBy: {
           uid: currentUser.uid,
-          // email: currentUser.email, 
+          // email: currentUser.email,
         },
       });
-  
+
       setTitle("");
       setDescription("");
       setCompany("");
@@ -46,13 +46,13 @@ const PostJob = () => {
       console.error("Error posting job: ", error);
     }
   };
-  
+
   return (
     <div className="bg-gray-50">
       <LoggedHead />
-      <div className="px-48">
-        <div className="mt-16 border border-slate-500 w-1/2 m-auto py-14 rounded-xl px-10 mb-10">
-          <h2 className="text-4xl font-semibold mb-10  text-center">
+      <div className="lg:px-48 px-10">
+        <div className="mt-16 border border-slate-500 lg:w-1/2 m-auto py-14 rounded-xl px-10 mb-10">
+          <h2 className="lg:text-2xl text-xl font-semibold mb-10  text-center">
             Post a Job
           </h2>
 
@@ -106,12 +106,14 @@ const PostJob = () => {
                 className="border border-slate-200 rounded-xl px-6 py-2 outline-0"
               />
             </div>
-            <button
-              className="block text-center bg-violet-400 text-gray-50 px-4 py-2 rounded-xl font-semibold relative left-40 mt-10"
-              type="submit"
-            >
-              Post Job
-            </button>
+            <div className="w-1/4 m-auto">
+              <button
+                className="block text-center bg-violet-400 text-gray-50 lg:px-4 px-2 py-2 rounded-xl font-semibold mt-10"
+                type="submit"
+              >
+                Post Job
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -120,7 +122,6 @@ const PostJob = () => {
 };
 
 export default PostJob;
-
 
 // const [title, setTitle] = useState("");
 //   const [description, setDescription] = useState("");
