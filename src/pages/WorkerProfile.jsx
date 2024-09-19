@@ -42,7 +42,7 @@ const WorkerProfile = () => {
   }, []);
 
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 bg-gray-50">
       <div className="bg-gray-50">
         <SideMenu />
       </div>

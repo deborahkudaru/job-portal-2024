@@ -6,6 +6,7 @@ import google from "../images/google.png";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from "../Firebase";
 import { setDoc, doc } from "firebase/firestore";
+import ResumeUpload from "../components/Resume";
 
 const Workersignup = () => {
   const [email, setEmail] = useState("");
@@ -159,6 +160,7 @@ const Workersignup = () => {
                 className="border border-slate-400 rounded-xl py-2 px-6 outline-0 bg-gray-50"
               ></textarea>
             </div>
+           <ResumeUpload />
           </div>
           <div className="w-1/2 m-auto">
             <button

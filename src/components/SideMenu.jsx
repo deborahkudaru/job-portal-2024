@@ -1,5 +1,4 @@
 import React from "react";
-import WorkerLogo from "./WorkerLogo";
 import { Link } from "react-router-dom";
 import { RxDashboard } from "react-icons/rx";
 import { TbUsersPlus } from "react-icons/tb";
@@ -9,14 +8,15 @@ import { LuUsers } from "react-icons/lu";
 import { MdDateRange } from "react-icons/md";
 import { GoQuestion } from "react-icons/go";
 import { FiSettings } from "react-icons/fi";
+import SideMenuLogo from "./SideMenuLogo";
 
 const SideMenu = () => {
   return (
-    <div className="bg-neutral-900 border text-gray-200 font-light flex flex-col gap-8 w-full px-10 pb-80 pt-5">
-      <WorkerLogo />
+    <div className="bg-neutral-900 border text-gray-200 font-light flex flex-col gap-8 w-full px-10 pb-96 pt-5">
+      <SideMenuLogo />
       <div className="flex flex-col gap-4">
         <p>MAIN MENU</p>
-        <div className="flex hover:text-violet-400">
+        <div className="flex gap-2/ hover:text-violet-400">
           <RxDashboard className="relative top-1" />
           <Link>Dashboard</Link>
         </div>

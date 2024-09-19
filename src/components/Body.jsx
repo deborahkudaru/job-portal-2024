@@ -32,7 +32,7 @@ const Body = () => {
                 single day
               </p>
             </div>
-            <BsStars className="text-8xl" />
+            <BsStars className="lg:text-8xl text-2xl" />
             <img className="lg:w-96 rounded-2xl" src={image} alt="" />
           </div>
           <div className="flex gap-3 lg:relative lg:bottom-14  mt-3">

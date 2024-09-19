@@ -10,7 +10,7 @@ const ProfileTop = () => {
     <div className="flex justify-between my-5 pr-6">
       <div className="border border-gray-300 flex gap-2 pl-5 pr-14 py-1 rounded-lg">
         <BiSearch className="relative top-1 text-gray-500 text-xl" />
-        <input type="text" placeholder="Search now..." className="bg-gray-50 pr-16"/>
+        <input type="text" placeholder="Search now..." className="bg-gray-50 pr-16 outline-0"/>
       </div>
       <div className="flex gap-2">
         <button className="border border-gray-300 px-4 py-2 rounded-lg flex gap-2 text-gray-600"><FiEdit  className="text-xl relative top-1"/> Custom Page</button>
