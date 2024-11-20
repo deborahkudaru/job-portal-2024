@@ -113,7 +113,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/login"
-              className="text-slate-900 transition duration-300 lg:ml-10 ml:0 border-slate-900 rounded-lg border-2 px-8 py-2"
+              className="text-slate-900 transition duration-300 lg:ml-10 ml-0 border-slate-900 rounded-lg border-2 px-8 py-2"
             >
               Login
             </Link>

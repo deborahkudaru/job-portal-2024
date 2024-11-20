@@ -34,6 +34,7 @@ const AllApplied = () => {
         </div>
       </div>
       <p className="border-t-2"></p>
+      <Applied />
     </div>
   );
 };

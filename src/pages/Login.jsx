@@ -53,13 +53,13 @@ const Login = () => {
           </div>
 
           <button
-            className="mt-5 bg-violet-400 hover:bg-violet-500 py-3 lg:px-32 px-24 rounded-lg text-gray-50 font-semibold mb-5 text-center"
+            className="mt-5 bg-violet-400 hover:bg-violet-500 py-3 lg:px-32 px-16 rounded-lg text-gray-50 font-semibold mb-5 text-center"
             type="submit"
           >
             Continue
           </button>
           <p>or</p>
-          <div className="flex flex-col gap-3 mt-5">
+          <div className="flex flex-col gap-3 mt-5 lg:text-base text-sm">
             <button className="border border-slate-500 font-semibold w-2/3 m-auto py-3 rounded-lg flex gap-2 lg:px-14 px-7">
               <img
                 src={google}

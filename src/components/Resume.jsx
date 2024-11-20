@@ -52,6 +52,7 @@ const ResumeUpload = ({ userId }) => {
 
   return (
     <div className="resume-upload bg-gray-100 p-4 rounded shadow-md">
+      <label htmlFor="">Optional</label>
       <input
         type="file"
         accept=".pdf,.doc,.docx"
@@ -60,7 +61,7 @@ const ResumeUpload = ({ userId }) => {
       />
       <button
         onClick={handleUpload}
-        className="bg-violet-400 text-gray-50 px-4 py-2 rounded hover:bg-blue-600"
+        className="bg-violet-400 text-gray-50 px-4 py-2 rounded-lg hover:bg-violet-600"
       >
         Upload Resume
       </button>

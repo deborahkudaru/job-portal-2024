@@ -43,15 +43,12 @@ const Applied = () => {
 
   return (
     <>
-      <h2 className="text-4xl font-bold pt-28 text-center bg-gray-50">
-        Application Lists
-      </h2>
-      <div className="px-48 pt-10 bg-gray-50 grid grid-cols-2 gap-10 pb-10">
+      <div className="flex pb-10">
         {apply.length > 0 ? (
           apply.map((apply) => (
             <div
               key={apply.id}
-              className="bg-white py-3 px-6 gap-5 border-2 border-slate-100 rounded"
+              className="bg-white py-3"
             >
               <h2 className="text-xl text-violet-400">{apply.fullName}</h2>
               <p className="text-slate-600 font-medium mb-2">
@@ -75,7 +72,7 @@ const Applied = () => {
             </div>
           ))
         ) : (
-          <p className="text-2xl font-semibold ">No applications available.</p>
+          <p className="">No applications available.</p>
         )}
       </div>
     </>
